@@ -12,7 +12,6 @@ public class Postre {
     public Postre (String sabor){
         aderezos= new ArrayList<>();
         this.sabor=sabor;
-        precioParcial=0;
     }
     
 	public double calcularPrecioFinal(){
