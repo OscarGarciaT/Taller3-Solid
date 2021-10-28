@@ -20,5 +20,5 @@ public class LecheDescremada extends LecheEntera {
     public void usarPastel() {
         System.out.println("Usando leche descremada");
     }
-    //Comentario Prueba
+    
 }
