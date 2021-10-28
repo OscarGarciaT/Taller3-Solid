@@ -24,6 +24,18 @@ public class Pastel extends Postre{
         precioFinal=(precioParcial+(precioParcial*0.12))+(aderezos.size()*0.50);
         return precioFinal;
     }
+    
+    @Override
+    public void anadirAderezo(Aderezo aderezo){
+        super.anadirAderezo(aderezo);
+    }
+    
+    @Override
+    public void quitarAderezo(Aderezo aderezo){
+    	super.quitarAderezo(aderezo);
+    }
+
+    
     @Override
     public ArrayList<Aderezo> getAderezos() {
         return aderezos;

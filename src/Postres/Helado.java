@@ -28,6 +28,16 @@ public class Helado extends Postre{
     public ArrayList<Aderezo> getAderezos() {
         return aderezos;
     }
+    
+    @Override
+    public void anadirAderezo(Aderezo aderezo){
+        super.anadirAderezo(aderezo);
+    }
+    
+    @Override
+    public void quitarAderezo(Aderezo aderezo){
+    	super.quitarAderezo(aderezo);
+    }
 
     @Override
     public String toString() {

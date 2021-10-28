@@ -21,6 +21,14 @@ public class Postre {
         return precioFinal;
     }
 
+	public void anadirAderezo(Aderezo aderezo){
+        aderezos.add(aderezo);
+    }
+    
+    public void quitarAderezo(Aderezo aderezo){
+    	aderezos.remove(aderezo);
+    }
+
     public ArrayList<Aderezo> getAderezos() {
         return aderezos;
     }
