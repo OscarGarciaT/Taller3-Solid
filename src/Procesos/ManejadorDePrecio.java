@@ -3,15 +3,16 @@ package Procesos;
 import java.util.ArrayList;
 
 import Adicionales.Aderezo;
+import Postres.Postre;
 
 public class ManejadorDePrecio {
-	public double calcularPrecioFinal(double precioParcial, ArrayList<Aderezo> aderezos){
+	public static double calcularPrecioFinal(Postre postre){
         double precioFinal;
-        precioFinal=(precioParcial+(precioParcial*0.12))+(aderezos.size()*0.50);
+        precioFinal=(postre.getPrecioParcial()+(postre.getPrecioParcial()*0.12))+(postre.getAderezos().size()*0.50);
         return precioFinal;
     }
 	
-	public String showPrecioFinal(double precioParcial, ArrayList<Aderezo> aderezos){
-        return "Precio Final: $ " + calcularPrecioFinal(precioParcial, aderezos);
+	public static String showPrecioFinal(Postre postre){
+        return "Precio Final: $ " + calcularPrecioFinal( postre);
     }
 }

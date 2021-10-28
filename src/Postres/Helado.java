@@ -17,13 +17,13 @@ public class Helado extends Postre{
     	super(sabor);
     	aderezos= new ArrayList<>();
     	this.precioParcial = 7.85;
-    }
+    }/*
     @Override
     public double calcularPrecioFinal(){
         double precioFinal;
         precioFinal=(precioParcial+(precioParcial*0.12))+(aderezos.size()*0.50);
         return precioFinal;
-    }
+    }*/
     @Override
     public ArrayList<Aderezo> getAderezos() {
         return aderezos;
@@ -42,11 +42,11 @@ public class Helado extends Postre{
     @Override
     public String toString() {
         return "Helado{" + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}';
-    }
+    }/*
     @Override
     public String showPrecioFinal(){
         return "Precio Final: $ " + calcularPrecioFinal();
-    }
+    }*/
     
     
     

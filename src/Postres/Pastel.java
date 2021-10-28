@@ -18,13 +18,13 @@ public class Pastel extends Postre{
         aderezos= new ArrayList<>();
         this.precioParcial = 15.55;
     }
-    
+    /*
     @Override
     public double calcularPrecioFinal(){
         double precioFinal;
         precioFinal=(precioParcial+(precioParcial*0.12))+(aderezos.size()*0.50);
         return precioFinal;
-    }
+    }*/
     
     @Override
     public void anadirAderezo(Aderezo aderezo){
@@ -46,8 +46,9 @@ public class Pastel extends Postre{
     public String toString() {
         return "Pastel{" + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}';
     }
+    /*
     public String showPrecioFinal(){
         return "Precio Final: $ " + calcularPrecioFinal();
-    }
+    }*/
     
 }
